@@ -1,2 +1,2 @@
-# bh67
-repository for homework
+# Welcome git
+>repository for homework
