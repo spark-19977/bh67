@@ -1,24 +1,23 @@
 # Пользователь вводит 3 числа, сказать сколько из них положительных
 # и сколько отрицательных
 
+first_number = float(input(f'Enter first number: '))
+second_number = float(input(f'Enter second number: '))
+third_number = float(input(f'Enter third number: '))
 
-def get_float(name='number'):
-    while True:
-        try:
-            number = float(input(f'Enter {name}: '))
-            return number
-        except ValueError:
-            print(f"Please enter valid {name}")
-
-
-my_numbers = []
-for i in range(3):
-    my_numbers.append(get_float())
 positive = 0
 negative = 0
-for number in my_numbers:
-    if number > 0:
-        positive += 1
-    elif number < 0:
-        negative += 1
-print(f'you entered {positive} positive numbers and {negative} negative')
+
+if first_number > 0:
+    positive += 1
+elif first_number < 0:
+    negative += 1
+if second_number > 0:
+    positive += 1
+elif second_number < 0:
+    negative += 1
+if third_number > 0:
+    positive += 1
+elif third_number < 0:
+    negative += 1
+print(f'You entered {positive} positive numbers and {negative} negative')

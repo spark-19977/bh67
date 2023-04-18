@@ -2,17 +2,8 @@
 # приветственное сообщение путем форматирования 3-мя способами
 
 
-def get_int(name='number'):
-    while True:
-        try:
-            number = int(input(f'Enter {name}: '))
-            return number
-        except ValueError:
-            print(f"Please enter valid {name}")
-
-
 name = input('Enter your name: ')
-age = get_int('age')
+age = int(input(f'Enter your age: '))
 city = input('Enter city you live: ')
 
 print('First way:')
