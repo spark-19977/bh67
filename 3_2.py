@@ -13,5 +13,5 @@ def get_float(name='number'):
 first_number = get_float()
 second_number = get_float()
 third_number = get_float()
-average = round(sum((first_number, second_number, third_number))/3,3)
+average = round(sum((first_number, second_number, third_number)) / 3, 3)
 print(average)
