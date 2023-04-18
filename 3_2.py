@@ -1,13 +1,13 @@
 # Пользователь вводит 3 числа, найти среднее арифмитическое с точность 3
 
 
-def get_float(message='Enter number: '):
+def get_float(name='number'):
     while True:
         try:
-            number = float(input(message))
+            number = float(input(f'Enter {name}: '))
             return number
         except ValueError:
-            print("Please enter valid number")
+            print(f"Please enter valid {name}")
 
 
 first_number = get_float()
