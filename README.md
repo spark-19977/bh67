@@ -1,2 +1,2 @@
-# **Welcome git**
+# Welcome git
 >repository for homework
