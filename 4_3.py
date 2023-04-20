@@ -4,6 +4,5 @@
 
 n = int(input('Enter numbers of keys: '))
 
-# my_dict = {i: {input('enter name: '): input('enter email: ')} for i in range(n+1)}
 my_dict = {i: {'name': input('enter name: '), 'email': input('enter email: ')} for i in range(n+1)}
 print(my_dict)
