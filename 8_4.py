@@ -38,8 +38,8 @@ class Category:
 
     @classmethod
     def update(cls, index, new_name, is_published):
-        for categor in cls.categories:
-            if new_name == categor['name']:
+        for category in cls.categories:
+            if new_name == category['name']:
                 raise ValueError
         if index < len(cls.categories):
             cls.categories[index] = {'name': new_name, 'is_published': is_published}
