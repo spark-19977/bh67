@@ -134,9 +134,9 @@ class ConfigParser:
             result += f'[{k}]\n'
             for ik, iv in v.items():
                 result += f'{ik}={iv}\n'
-                print('------')
             result += '\n'
         return result.strip()
+
 
 text = '''
 [Section1]
