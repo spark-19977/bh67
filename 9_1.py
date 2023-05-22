@@ -13,8 +13,11 @@ import random
 
 
 class Card:
-    def __init__(self, card_number=None, discount=5):
-        self.__card_number = card_number
+    def __init__(self, card_number: int = None, discount: int = 5):
+        if card_number is None:
+            self.__card_number = random.randint(10000000,99999999)
+        else:
+            self.__card_number = card_number
         self._discount = discount
 
     @property
