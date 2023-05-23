@@ -21,6 +21,7 @@ class EGE(pydantic.BaseModel):
             data = fh.read()
             if data and not data.endswith('\n'):
                 fh.write('\n')
+                del data
             fh.seek(pos)
             writer = csv.DictWriter(fh, fields)
             if not fh.tell():
@@ -36,4 +37,4 @@ EGE_data = {
 
 EGE(**EGE_data)
 print(a := EGE.from_csv('10_1.csv'))
-a[0].to_csv('10_11.csv')
+a[1].to_csv('10_11.csv')
